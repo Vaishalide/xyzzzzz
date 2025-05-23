@@ -14,8 +14,7 @@ if (isset($_SERVER['HTTP_ORIGIN'])) {
         exit;
     }
 }
-header('Content-Type: application/json');
-header("Access-Control-Allow-Origin: *"); // Optional: restrict to your frontend domain
+header('Content-Type: application/json');// Optional: restrict to your frontend domain
 
 $url = getenv('IFRAME_URL');
 
